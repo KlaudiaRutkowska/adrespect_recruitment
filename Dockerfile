@@ -1,6 +1,27 @@
-FROM node:16
+FROM node:16 as base
 
-WORKDIR /node
+WORKDIR /src
+EXPOSE 8080
+
+## PRODUCTION
+FROM base as production
+
+ENV NODE_ENV=production
+
+COPY package*.json ./
+
+RUN npm ci
+
+COPY . .
+
+RUN npm run build:css
+
+CMD [ "node", "server.js" ]
+
+## DEVELOPMENT
+FROM base as dev
+
+ENV NODE_ENV=development
 
 COPY package*.json ./
 
@@ -10,5 +31,4 @@ COPY . .
 
 RUN npm run build:css
 
-EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "nodemon", "server.js" ]
