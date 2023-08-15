@@ -6,12 +6,15 @@
   "scripts": {
     "build:css": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css",
     "watch:css": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
+    "dev": "concurrently \"npm run watch:css\" \"nodemon server.js\"",
     "start": "node server.js"
   },
   "author": "Klaudia Rutkowska",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3"
   },
