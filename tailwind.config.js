@@ -33,6 +33,8 @@ module.exports = {
                 '1.4': '22px',
                 '4.5': '72px',
                 '5.5': '89px',
+                '15': '60px',
+                '27': '110px',
                 '30': '120px'
             },
             borderRadius: {
@@ -40,7 +42,8 @@ module.exports = {
                 button: '200px'
             },
             fontSize: {
-                '1.75': '28px'
+                '1.75': '28px',
+                '2.5': '40px'
             }
         }
 
