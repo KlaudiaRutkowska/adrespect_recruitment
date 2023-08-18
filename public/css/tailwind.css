@@ -7,9 +7,3 @@
         font-family: 'Inter', system-ui, sans-serif;
     }
 }
-
-.grid-cols-bleed {
-    @apply grid-cols-[minmax(calc(calc(calc(100%_-_576px)_/_2)+calc(89px_-_.5rem)),calc(89px_-_.5rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_576px)_/_2)+calc(89px_-_.5rem)),calc(89px_-_.5rem))];
-    @apply md:grid-cols-[minmax(calc(calc(calc(100%_-_960px)_/_2)+calc(89px_-_1.5rem)),calc(89px_-_1.5rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_960px)_/_2)+calc(89px_-_1.5rem)),calc(89px_-_1.5rem))];
-    @apply lg:grid-cols-[minmax(calc(calc(calc(100%_-_1440px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_1440px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))];
-}
