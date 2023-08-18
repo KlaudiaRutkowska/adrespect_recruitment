@@ -58,7 +58,7 @@
 
         <nav class="flex justify-end basis-1/2">
             <ul class="flex text-3.5 gap-6 items-center text-sm leading-normal -tracking-[.14px]">
-                <li class="relative group">
+                <li class="relative group/dropdown">
                     <a href="#" class="flex items-center justify-center p-3">Oferta
                         <svg class=" ml-[5px]" width="12" height="12" viewBox="0 0 12 12" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -69,15 +69,31 @@
                     </a>
 
                     <ul
-                        class="absolute flex flex-col invisible p-4 leading-tight align-middle transition-[visibility,opacity,transform] delay-[300ms,0ms,0ms] duration-300 ease-in-out translate-y-2 bg-white border rounded-lg shadow-sm opacity-0 -left-3 border-bright top-100 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:delay-0">
+                        class="absolute flex flex-col w-screen max-w-[16rem] pointer-events-none invisible p-3 leading-tight align-middle transition-[visibility,opacity,transform] delay-[300ms,0ms,0ms] duration-300 ease-in-out translate-y-2 bg-white border rounded-lg shadow-sm opacity-0 -left-3 border-bright top-100 group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0 group-hover/dropdown:delay-0 group-hover/dropdown:pointer-events-auto">
                         <li>
-                            <a href="#" class="block p-4">
-                                <div class="flex items-center justify-center bg-bright w-11 h-11"></div>
+                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                                    <img src="/images/pencil.png" alt="Projekty" class="w-1/2 h-auto" />
+                                </div>
                                 Projekty
                             </a>
                         </li>
-                        <li><a href="#" class="block p-4">Wizualizacje</a></li>
-                        <li><a href="#" class="block p-4">Realizacje</a></li>
+                        <li>
+                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                                    <img src="/images/eye.png" alt="Wizualizacje" class="w-1/2 h-auto" />
+                                </div>
+                                Wizualizacje
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                                    <img src="/images/sparkles.png" alt="Realizacje" class="w-1/2 h-auto" />
+                                </div>
+                                Realizacje
+                            </a>
+                        </li>
                     </ul>
                 </li>
 
@@ -118,7 +134,8 @@
                             <p class="text-base leading-normal -tracking-[.16px]">
                                 Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
                                 nowoczesne ogrody
-                                przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy
+                                przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i
+                                wcielimy
                                 w
                                 życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
                             </p>
@@ -132,8 +149,10 @@
                         class="flex flex-col items-start col-span-4 col-start-1 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
                         <img src="images/pencil.png" alt="">
                         <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">Projekty</h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">Projekty
+                            </h3>
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zaprojektujemy Twój ogród w
+                                nowoczesnym stylu i z najlepszym
                                 wykorzystaniem istniejącej
                                 przestrzeni.
                             </p>
@@ -154,8 +173,10 @@
                         class="flex flex-col items-start col-span-4 col-start-5 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
                         <img class="pt-[7px] pb-[8px]" src="images/eye.png" alt="">
                         <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">Wizualizacje</h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">
+                                Wizualizacje</h3>
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Przedstawimy Ci projekty
+                                koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
                         </div>
                         <button
                             class="text-base font-regular inline-flex justify-self-start gap-x-2.5 flex-row border-b border-green mt-auto">
@@ -173,8 +194,10 @@
                         class="flex flex-col items-start col-span-4 col-start-9 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
                         <img src="images/sparkles.png" alt="">
                         <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">Realizacje</h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">
+                                Realizacje</h3>
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zrealizujemy Twoje marzenie
+                                przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
                         </div>
                         <button
                             class="text-base font-regular inline-flex justify-self-start gap-x-2.5 flex-row border-b border-green mt-auto">
@@ -228,7 +251,7 @@
                     </div>
                 </div>
 
-                <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"/>
+                <hr class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
                 <div class="flex flex-row justify-between text-sm leading-normal">
                     <ul class="flex gap-x-12">
@@ -245,7 +268,7 @@
                 </div>
             </div>
 
-            
+
             <div class="flex flex-row justify-between grid-cols-10 col-span-10 col-start-2">
 
                 <p>Prawa zastrzeżone © 2022</p>
