@@ -71,24 +71,30 @@
                     <ul
                         class="absolute flex flex-col w-screen max-w-[16rem] pointer-events-none invisible p-3 leading-tight align-middle transition-[visibility,opacity,transform] delay-[300ms,0ms,0ms] duration-300 ease-in-out translate-y-2 bg-white border rounded-lg shadow-sm opacity-0 -left-3 border-bright top-100 group-hover/dropdown:opacity-100 group-hover/dropdown:visible group-hover/dropdown:translate-y-0 group-hover/dropdown:delay-0 group-hover/dropdown:pointer-events-auto">
                         <li>
-                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
-                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                            <a href="#"
+                                class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div
+                                    class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
                                     <img src="/images/pencil.png" alt="Projekty" class="w-1/2 h-auto" />
                                 </div>
                                 Projekty
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
-                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                            <a href="#"
+                                class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div
+                                    class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
                                     <img src="/images/eye.png" alt="Wizualizacje" class="w-1/2 h-auto" />
                                 </div>
                                 Wizualizacje
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
-                                <div class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
+                            <a href="#"
+                                class="flex items-center gap-4 p-3 transition-colors duration-200 bg-white rounded-lg group/item hover:bg-green hover:text-white">
+                                <div
+                                    class="flex items-center justify-center transition-colors duration-200 rounded-lg bg-bright w-11 h-11 group-hover/item:bg-white">
                                     <img src="/images/sparkles.png" alt="Realizacje" class="w-1/2 h-auto" />
                                 </div>
                                 Realizacje
@@ -216,9 +222,11 @@
         </section>
 
         <section id="about" class="bg-green text-bright">
-            <div class="container grid grid-cols-12 gap-x-[64px]">
-                <img class="col-span-6 col-start-1" src="images/about-company-photo.png" alt="">
-                <div class="flex flex-col items-start justify-center col-span-6 col-start-7">
+            <div class="grid grid-cols-bleed gap-x-[64px] max-h-[720px]">
+                <div class="col-span-7 max-h-[inherit]">
+                    <img class="object-cover w-full h-full" src="images/about-company-photo.png" alt="">
+                </div>
+                <div class="flex flex-col items-start justify-center col-span-6 col-start-8 pl-24">
                     <div>
                         <p class="text-xs leading-normal -tracking-[.12px]">O firmie</p>
                         <h2 class="mt-4 mb-10 text-5xl font-medium font-montserrat leading-[1.15] -tracking-[1.44px]">
@@ -233,13 +241,15 @@
                         </p>
                     </div>
 
-                    <button class="mt-4.5 border border-bright rounded-full px-6 pt-2.5 pb-3 flex flex-row gap-x-2 items-center justify-between">
+                    <button
+                        class="group/button mt-4.5 border transition-colors duration-200 border-bright rounded-full px-6 pt-2.5 pb-3 flex flex-row gap-x-2 items-center justify-between hover:bg-bright hover:text-green">
                         <span>
                             Poznaj nas bliżej
                         </span>
 
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
+                                class="transition-colors duration-200 group-hover/button:fill-green"
                                 d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
                                 fill="#F5F0EC" />
                         </svg>
