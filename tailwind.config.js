@@ -14,6 +14,7 @@ module.exports = {
         },
         container: {
             center: true,
+            padding: '89px'
         },
         fontFamily: {
             'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
@@ -31,14 +32,21 @@ module.exports = {
                 '0.3': '5px',
                 '1.4': '22px',
                 '4.5': '72px',
-                '5.5': '89px'
+                '5.5': '89px',
+                '15': '60px',
+                '27': '110px',
+                '30': '120px'
             },
             borderRadius: {
+                'border-container': '28px',
                 button: '200px'
             },
+            fontSize: {
+                '1.75': '28px',
+                '2.5': '40px'
+            }
         }
 
     },
     plugins: [],
 }
-
