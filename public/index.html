@@ -215,69 +215,78 @@
                 <div class="grid grid-cols-12 col-span-12 gap-x-16">
 
                     <div
-                        class="flex flex-col items-start col-span-4 col-start-1 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
-                        <img src="images/pencil.png" alt="">
-                        <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">Projekty
+                        class="flex flex-col items-start col-span-4 col-start-1 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start
+                        transition-[transform,box-shadow,color,background-color] hover:-translate-y-2 hover:shadow-md hover:bg-green translate-y-0 duration-200 group/color">
+                        <img class="transition-[filter] invert-0 group-hover/color:invert" src="images/pencil.png" alt="">
+                        <div class="grid mt-8 gap-y-3 group-hover/color:text-bright">
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px] transition-[color]">Projekty
                             </h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zaprojektujemy Twój ogród w
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px] transition-[color]">Zaprojektujemy Twój ogród w
                                 nowoczesnym stylu i z najlepszym
                                 wykorzystaniem istniejącej
                                 przestrzeni.
                             </p>
                         </div>
-                        <button
-                            class="inline-flex flex-row mt-auto text-base border-b font-regular gap-x-2 border-green">
-                            <span class="leading-normal tracking-normal text-green">Poznaj nas bliżej</span>
+                        <a href="#0"
+                            class="inline-flex flex-row mt-auto text-base border-b font-regular gap-x-2 border-green
+                            group-hover/color:border-bright transition-[gap,shadow-color] duration-200 hover:gap-4">
+                            <span class="leading-normal tracking-normal text-green group-hover/color:text-bright transition-[color]">Poznaj nas bliżej</span>
                             <svg class="self-center" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
+                                    class="group-hover/color:fill-bright transition-[fill]"
                                     d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
                                     fill="#1B5B31" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
 
                     <div
-                        class="flex flex-col items-start col-span-4 col-start-5 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
-                        <img class="pt-[7px] pb-[8px]" src="images/eye.png" alt="">
-                        <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">
+                        class="flex flex-col items-start col-span-4 col-start-5 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start
+                        transition-[transform,box-shadow,background-color] hover:-translate-y-2 hover:shadow-md hover:bg-green translate-y-0 duration-200 group/color">
+                        <img class="pt-[7px] pb-[8px] transition-[filter] invert-0 group-hover/color:invert" src="images/eye.png" alt="">
+                        <div class="grid mt-8 gap-y-3 group-hover/color:text-bright">
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px] transition-[color]">
                                 Wizualizacje</h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Przedstawimy Ci projekty
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px] transition-[color]">Przedstawimy Ci projekty
                                 koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
                         </div>
-                        <button
-                            class="text-base font-regular inline-flex justify-self-start gap-x-2.5 flex-row border-b border-green mt-auto">
-                            <span class="leading-normal tracking-normal text-green">Dowiedz się więcej</span>
+                        <a href="#0"
+                            class="text-base font-regular inline-flex justify-self-start gap-x-2.5 border-b border-green mt-auto
+                            group-hover/color:border-bright transition-[gap,shadow-color,border-color] duration-200 hover:gap-4">
+                            <span class="leading-normal tracking-normal text-green group-hover/color:text-bright transition-[color]">Dowiedz się więcej</span>
                             <svg class="self-center" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
+                                class="group-hover/color:fill-bright transition-[fill]"
                                     d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
                                     fill="#1B5B31" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
 
                     <div
-                        class="flex flex-col items-start col-span-4 col-start-9 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start">
-                        <img src="images/sparkles.png" alt="">
-                        <div class="grid mt-8 gap-y-3">
-                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px]">
+                        class="flex flex-col items-start col-span-4 col-start-9 px-10 py-12 bg-white rounded-border-container min-h-[370px] justify-start
+                        transition-[transform,box-shadow,background-color] hover:-translate-y-2 hover:shadow-md hover:bg-green translate-y-0 duration-200 group/color">
+                        <img class="transition-[filter] invert-0 group-hover/color:invert" src="images/sparkles.png" alt="">
+                        <div class="grid mt-8 gap-y-3 group-hover/color:text-bright">
+                            <h3 class="font-montserrat font-medium text-1.75 leading-[1.15] -tracking-[1.4px] transition-[color]">
                                 Realizacje</h3>
-                            <p class="text-sm font-regular leading-normal -tracking-[.14px]">Zrealizujemy Twoje marzenie
+                            <p class="text-sm font-regular leading-normal -tracking-[.14px] transition-[color]">Zrealizujemy Twoje marzenie
                                 przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
                         </div>
-                        <button
-                            class="text-base font-regular inline-flex justify-self-start gap-x-2.5 flex-row border-b border-green mt-auto">
-                            <span class="leading-normal tracking-normal text-green">Dowiedz się więcej</span>
+                        <a href="#0"
+                            class="text-base font-regular inline-flex justify-self-start gap-x-2.5 flex-row border-b border-green mt-auto
+                            group-hover/color:border-bright transition-[gap,shadow-color,border-color] duration-200 hover:gap-4">
+                            <span class="leading-normal tracking-normal text-green group-hover/color:text-bright transition-[color]">Zobacz nasze realizacje</span>
                             <svg class="self-center" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
+                                    class="group-hover/color:fill-bright transition-[fill]"
                                     d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z"
                                     fill="#1B5B31" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
