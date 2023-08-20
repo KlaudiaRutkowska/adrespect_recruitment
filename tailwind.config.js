@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./public/**/*.html"],
+    content: ["./src/**/*.{html,js}"],
     theme: {
         screens: {
             'sm': '576px',
@@ -21,12 +21,12 @@ module.exports = {
             'inter': ['Inter', 'sans-serif'],
             'montserrat': ['Montserrat', 'sans-serif'],
         },
-
         extend: {
             colors: {
                 'bright': '#F5F0EC',
                 'beige': '#DCC1AB',
                 'green': '#1B5B31',
+                'black': '#111111'
             },
             spacing: {  
                 '0.3': '5px',
@@ -44,6 +44,25 @@ module.exports = {
             fontSize: {
                 '1.75': '28px',
                 '2.5': '40px'
+            },
+            animation: {
+                marquee: 'marquee 45s linear infinite',
+                'marquee-md': 'marquee-md 45s linear infinite',
+                'marquee-lg': 'marquee-lg 45s linear infinite',
+            },
+            keyframes: {
+                marquee: {
+                    'from': { transform: 'translateY(0)' },
+                    'to': { transform: 'translateY(calc(-100% - 0.75rem))' }
+                },
+                'marquee-md': {
+                    'from': { transform: 'translateY(0)' },
+                    'to': { transform: 'translateY(calc(-100% - 1.5rem))' }
+                },
+                'marquee-lg': {
+                    'from': { transform: 'translateY(0)' },
+                    'to': { transform: 'translateY(calc(-100% - 43px))' }
+                },
             }
         }
 
