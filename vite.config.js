@@ -1,10 +1,12 @@
 import { defineConfig } from "vite"
 import { compression } from 'vite-plugin-compression2'
+import path from "path"
 
 export default defineConfig({
-    root: 'src',
+    base: "/adrespect_recruitment",
+    root: path.resolve(__dirname, 'src'),
     build: {
-        outDir: '../dist',
+        outDir: path.resolve(__dirname, 'dist'),
         emptyOutDir: true
     },
     plugins: [
