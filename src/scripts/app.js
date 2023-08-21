@@ -23,6 +23,7 @@ window.addEventListener("load", () => {
         expanded = !expanded
     })
 
+    // mobile menu
     const hamburger = document.getElementById('hamburger')
     const navigation = document.getElementById('navigation')
 
@@ -31,6 +32,7 @@ window.addEventListener("load", () => {
         navigation.classList.toggle('opened')
     })
 
+    // dropdown offers menu
     let opened = false
     let timeoutId = null
     const offers = document.getElementById('offers')
@@ -42,5 +44,22 @@ window.addEventListener("load", () => {
         clearTimeout(timeoutId)
 
         offersMenu.classList.toggle('opened')
+    })
+
+    // search bar
+    const searchButtons = document.querySelectorAll('[data-target="search"]')
+    const searchField = document.getElementById('searchfield')
+    const closeButton = document.getElementById('close')
+    const searchBar = document.getElementById('search')
+
+    searchButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            searchBar.classList.add('opened')
+            searchField.focus()
+        })
+    })
+
+    closeButton.addEventListener('click', () => {
+        searchBar.classList.remove('opened')
     })
 })

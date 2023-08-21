@@ -16,6 +16,24 @@
 <body>
     <header
         class="container bg-white relative flex flex-col py-3 px-4 md:px-12 xl:px-[89px] sm:flex-row sm:items-center">
+        <div id="search"
+            class="absolute bg-white flex items-center left-0 right-0 h-full py-3 px-4 z-50 transition-transform -translate-y-full opened:translate-y-0 md:px-12 xl:px-[89px]">
+            <input id="searchfield" type="search" placeholder="Wyszukaj..."
+                class="w-full text-black transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-sm lg:text-xl">
+
+            <button id="close"
+                class="group/close text-black w-10 h-10 relative focus:outline-none bg-white hover:text-green">
+                <div class="block w-6 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span aria-hidden="true"
+                        class="block absolute h-0.5 w-6 bg-current transform transition-transform duration-500 ease-in-out rotate-45 translate-y-0"></span>
+                    <span aria-hidden="true"
+                        class="block absolute h-0.5 w-6 bg-current transform transition-opacity duration-500 ease-in-out opacity-0"></span>
+                    <span aria-hidden="true"
+                        class="block absolute h-0.5 w-6 bg-current transform transition-transform duration-500 ease-in-out -rotate-45 translate-y-0"></span>
+                </div>
+            </button>
+        </div>
+
         <div class="flex justify-between items-center md:basis-1/2">
             <a class="py-3" href="/">
                 <svg width="115" height="20" viewBox="0 0 115 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,22 +73,33 @@
                 </svg>
             </a>
 
-            <button id="hamburger"
-                class="group/hamburger text-black w-10 h-10 relative focus:outline-none bg-white sm:hidden">
-                <span class="sr-only">Open main menu</span>
-                <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <span aria-hidden="true"
-                        class="block absolute h-0.5 w-5 bg-current transform transition-transform duration-500 ease-in-out -translate-y-1.5 group-[.open]/hamburger:rotate-45 group-[.open]/hamburger:translate-y-0"></span>
-                    <span aria-hidden="true"
-                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out group-[.open]/hamburger:opacity-0"></span>
-                    <span aria-hidden="true"
-                        class="block absolute h-0.5 w-5 bg-current transform transition-transform duration-500 ease-in-out translate-y-1.5 group-[.open]/hamburger:-rotate-45 group-[.open]/hamburger:translate-y-0"></span>
-                </div>
-            </button>
+            <div class="flex gap-4 sm:hidden">
+                <button type="button"
+                    class="group/search flex w-10 h-10 items-center justify-center bg-white hover:text-green"
+                    data-target="search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="group-hover/search:fill-green" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
+                            fill="#111111" />
+                    </svg>
+                </button>
+
+                <button id="hamburger"
+                    class="group/hamburger text-black w-10 h-10 relative focus:outline-none bg-white hover:text-green">
+                    <div class="block w-6 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <span aria-hidden="true"
+                            class="block absolute h-0.5 w-6 bg-current transform transition-transform duration-500 ease-in-out -translate-y-1.5 group-[.open]/hamburger:rotate-45 group-[.open]/hamburger:translate-y-0"></span>
+                        <span aria-hidden="true"
+                            class="block absolute h-0.5 w-6 bg-current transform transition-opacity duration-500 ease-in-out group-[.open]/hamburger:opacity-0"></span>
+                        <span aria-hidden="true"
+                            class="block absolute h-0.5 w-6 bg-current transform transition-transform duration-500 ease-in-out translate-y-1.5 group-[.open]/hamburger:-rotate-45 group-[.open]/hamburger:translate-y-0"></span>
+                    </div>
+                </button>
+            </div>
         </div>
 
         <nav id="navigation"
-            class="absolute flex top-17 bg-white transform origin-top scale-y-0 invisible opacity-0 transition-[visibility,opacity,transform] delay-[150ms,0ms,0ms] shadow-sm border-t border-black/10 z-50 left-0 right-0 opened:scale-y-100 opened:visible opened:opacity-100 opened:delay-0 sm:visible sm:opacity-100 sm:border-none sm:basis-4/5 lg:basis-2/3 xl:basis-1/2 sm:bg-transparent sm:justify-end sm:static sm:shadow-none sm:transform-none">
+            class="absolute flex top-17 bg-white transform origin-top scale-y-0 invisible opacity-0 transition-[visibility,opacity,transform] delay-[150ms,0ms,0ms] shadow-sm border-t border-black/10 z-40 left-0 right-0 opened:scale-y-100 opened:visible opened:opacity-100 opened:delay-0 sm:visible sm:opacity-100 sm:border-none sm:basis-4/5 lg:basis-2/3 xl:basis-1/2 sm:bg-transparent sm:justify-end sm:static sm:shadow-none sm:transform-none">
             <ul
                 class="flex flex-col px-2 py-4 w-full sm:gap-3 lg:gap-6 text-xs lg:text-sm leading-normal -tracking-[.14px] sm:p-0 sm:w-auto sm:flex-row sm:items-center">
                 <li class="relative group/dropdown group/color transition-colors hover:text-green">
@@ -83,9 +112,8 @@
                         </svg>
                     </a>
 
-                    <ul
-                        id="offers-menu"
-                        class="z-10 flex-col w-full flex overflow-hidden my-3 px-2 transform gap-2 leading-tight align-middle sm:flex sm:transition-[visibility,opacity,transform] sm:delay-[300ms,0ms,0ms] sm:duration-300 sm:ease-in-out bg-white -left-3 top-100 sm:my-0 sm:gap-0 sm:border sm:border-bright sm:shadow-sm sm:rounded-lg sm:p-3 sm:w-screen sm:max-w-[16rem] sm:translate-y-2 sm:opacity-0 sm:pointer-events-none sm:invisible sm:group-hover/dropdown:opacity-100 sm:group-hover/dropdown:visible sm:group-hover/dropdown:translate-y-0 sm:group-hover/dropdown:delay-0 sm:group-hover/dropdown:pointer-events-auto sm:absolute text-black ">
+                    <ul id="offers-menu"
+                        class="z-10 flex-col w-full flex overflow-hidden py-3 px-2 transform gap-2 leading-tight align-middle opacity-0 transition-opacity closed:animate-slideup opened:animate-slidedown opened:opacity-100 sm:!animate-none sm:flex sm:transition-[visibility,opacity,transform] sm:delay-[300ms,0ms,0ms] sm:duration-300 sm:ease-in-out bg-white -left-3 top-100 sm:gap-0 sm:border sm:border-bright sm:shadow-sm sm:rounded-lg sm:p-3 sm:w-screen sm:max-w-[16rem] sm:translate-y-2 sm:opacity-0 sm:pointer-events-none sm:invisible sm:group-hover/dropdown:opacity-100 sm:group-hover/dropdown:visible sm:group-hover/dropdown:translate-y-0 sm:group-hover/dropdown:delay-0 sm:group-hover/dropdown:pointer-events-auto sm:absolute text-black">
                         <li>
                             <a href="#"
                                 class="group/item flex items-center gap-4 transition-colors duration-200 bg-white sm:p-3 sm:rounded-lg sm:hover:bg-green sm:hover:text-white hover:text-green">
@@ -129,13 +157,13 @@
                     <a class="block p-2 lg:p-3 transition-colors hover:text-green" href="#">Kontakt</a>
                 </li>
                 <li class="hidden sm:block group/color transition-colors">
-                    <a class="flex py-0 lg:py-3 pl-0 md:pl-2 lg:pl-3" href="#">
+                    <button type="button" class="flex py-0 lg:py-3 pl-0 md:pl-2 lg:pl-3" data-target="search">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="group-hover/color:fill-green" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C11.87 17.75 13.5853 17.0877 14.9242 15.9848L20.4697 21.5303L20.5538 21.6029C20.8474 21.8208 21.2641 21.7966 21.5303 21.5303C21.8232 21.2374 21.8232 20.7626 21.5303 20.4697L15.9848 14.9242C17.0877 13.5853 17.75 11.87 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25ZM10 3.75C13.4518 3.75 16.25 6.54822 16.25 10C16.25 13.4518 13.4518 16.25 10 16.25C6.54822 16.25 3.75 13.4518 3.75 10C3.75 6.54822 6.54822 3.75 10 3.75Z"
                                 fill="#111111" />
                         </svg>
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -143,18 +171,23 @@
 
     <main>
         <section id="intro" class="bg-beige pb-6 md:pb-0">
-            <div class="flex flex-col-reverse justify-center md:grid md:grid-cols-bleed gap-2 gap-y-6 md:gap-x-4 lg:gap-6 xl:gap-x-16 md:max-h-[720px]">
-                <div class="flex flex-col items-start justify-center px-4 mx-auto max-w-screen-sm md:px-0 md:max-w-none md:mx-0 md:col-span-7 md:col-start-1 md:pl-8 lg:pl-12 xl:pl-0 xl:col-span-6 xl:col-start-2">
+            <div
+                class="flex flex-col-reverse justify-center md:grid md:grid-cols-bleed gap-2 gap-y-6 md:gap-x-4 lg:gap-6 xl:gap-x-16 md:max-h-[720px]">
+                <div
+                    class="flex flex-col items-start justify-center px-4 mx-auto max-w-screen-sm md:px-0 md:max-w-none md:mx-0 md:col-span-7 md:col-start-1 md:pl-8 lg:pl-12 xl:pl-0 xl:col-span-6 xl:col-start-2">
                     <div>
-                        <h2 class="mb-6 text-4xl font-medium font-montserrat md:mb-3 lg:mb-6 xl:mb-11 lg:text-5xl xl:text-6xl xl:leading-[70px]">
+                        <h2
+                            class="mb-6 text-4xl font-medium font-montserrat md:mb-3 lg:mb-6 xl:mb-11 lg:text-5xl xl:text-6xl xl:leading-[70px]">
                             Nowoczesna aranżacja <br>Twojego ogrodu
                         </h2>
-                        <p class="leading-normal text-xs sm:text-sm lg:text-base xl:w-5/6">Marka GiardDesign to wieloletnie doświadczenie i
+                        <p class="leading-normal text-xs sm:text-sm lg:text-base xl:w-5/6">Marka GiardDesign to
+                            wieloletnie doświadczenie i
                             wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do
                             każdego projektu.</p>
                     </div>
 
-                    <div class="flex flex-row gap-x-9 md:flex-col md:items-start xl:flex-row xl:gap-x-9 text-xs sm:text-sm">
+                    <div
+                        class="flex flex-row gap-x-9 md:flex-col md:items-start xl:flex-row xl:gap-x-9 text-xs sm:text-sm">
                         <button
                             class="group/button transition-colors duration-200 rounded-full px-4 pt-2 pb-2.5 mt-5 md:mt-12 lg:mt-6 xl:mt-[72px] lg:px-6 lg:pt-3 lg:pb-3.5 border border-transparent flex flex-row gap-x-2 text-bright bg-green justify-between hover:border-green hover:border hover:bg-bright hover:text-green">
                             Skontaktuj się z nami
@@ -180,7 +213,8 @@
                     <img class="object-cover w-full h-full" src="images/intro-photo.png" alt="">
 
                     <div class="absolute bottom-0 right-0 flex bg-bright">
-                        <button class="flex items-center justify-center w-17 h-17 transition-colors duration-300 ease-in-out hover:bg-green group/button lg:w-24 lg:h-24">
+                        <button
+                            class="flex items-center justify-center w-17 h-17 transition-colors duration-300 ease-in-out hover:bg-green group/button lg:w-24 lg:h-24">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="transition-colors duration-300 group-hover/button:fill-white"
@@ -188,7 +222,8 @@
                                     fill="black" />
                             </svg>
                         </button>
-                        <button class="flex items-center justify-center w-17 h-17 transition-colors duration-300 ease-in-out hover:bg-green group/button lg:w-24 lg:h-24">
+                        <button
+                            class="flex items-center justify-center w-17 h-17 transition-colors duration-300 ease-in-out hover:bg-green group/button lg:w-24 lg:h-24">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="transition-colors duration-300 group-hover/button:fill-white"
@@ -323,18 +358,22 @@
         </section>
 
         <section id="about" class="bg-green text-bright pb-6 md:pb-0">
-            <div class="flex flex-col justify-center md:grid md:grid-cols-bleed gap-2 gap-y-6 md:gap-x-4 lg:gap-6 xl:gap-x-16 md:max-h-[720px]">
+            <div
+                class="flex flex-col justify-center md:grid md:grid-cols-bleed gap-2 gap-y-6 md:gap-x-4 lg:gap-6 xl:gap-x-16 md:max-h-[720px]">
                 <div class="h-[450px] md:col-span-7 md:max-h-[inherit] md:h-auto">
                     <img class="object-cover w-full h-full" src="images/about-company-photo.png" alt="">
                 </div>
-                <div class="flex flex-col max-w-screen-sm px-4 mx-auto items-start justify-center md:px-0 md:mx-0 md:max-w-none md:pr-7 md:col-span-7 md:col-start-8 lg:pr-0 lg:col-span-6 lg:col-start-8 xl:col-start-8 lg:pl-12 xl:pl-24">
+                <div
+                    class="flex flex-col max-w-screen-sm px-4 mx-auto items-start justify-center md:px-0 md:mx-0 md:max-w-none md:pr-7 md:col-span-7 md:col-start-8 lg:pr-0 lg:col-span-6 lg:col-start-8 xl:col-start-8 lg:pl-12 xl:pl-24">
                     <div>
                         <p class="text-xs leading-normal -tracking-[.12px]">O firmie</p>
-                        <h2 class="mb-6 mt-2 md:mb-3 lg:mt-4 lg:mb-6 xl:mb-10 text-4xl lg:text-5xl font-medium font-montserrat leading-[1.15] -tracking-[1.44px]">
+                        <h2
+                            class="mb-6 mt-2 md:mb-3 lg:mt-4 lg:mb-6 xl:mb-10 text-4xl lg:text-5xl font-medium font-montserrat leading-[1.15] -tracking-[1.44px]">
                             Tworzymy
                             <span class="block italic tracking-normal font-inter">z pasją</span>
                         </h2>
-                        <p class="-tracking-[.16px] leading-normal text-xs sm:text-sm lg:text-base">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół
+                        <p class="-tracking-[.16px] leading-normal text-xs sm:text-sm lg:text-base">Każdy projekt to
+                            nowe wyzwanie. Dlatego nasz zespół
                             tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i
                             realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które
                             charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe,
