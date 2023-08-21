@@ -1,3 +1,5 @@
+import plugin from "tailwindcss/plugin"
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/**/*.{html,js}"],
@@ -40,6 +42,7 @@ module.exports = {
                 '4.5': '72px',
                 '5.5': '89px',
                 '15': '60px',
+                '17': '68px',
                 '27': '110px',
                 '30': '120px'
             },
@@ -71,7 +74,11 @@ module.exports = {
                 },
             }
         }
-
     },
-    plugins: [],
+    plugins: [
+        plugin(function({ addVariant }) {
+            addVariant('opened', '&.opened')
+            addVariant('closed', '&:not(.opened)')
+        })
+    ],
 }

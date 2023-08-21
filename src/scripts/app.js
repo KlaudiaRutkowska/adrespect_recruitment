@@ -19,7 +19,28 @@ window.addEventListener("load", () => {
         expandableGallery.classList.toggle('is-expanded')
 
         expanded && expandableGallery.scrollIntoView(false)
-    
+
         expanded = !expanded
+    })
+
+    const hamburger = document.getElementById('hamburger')
+    const navigation = document.getElementById('navigation')
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open')
+        navigation.classList.toggle('opened')
+    })
+
+    let opened = false
+    let timeoutId = null
+    const offers = document.getElementById('offers')
+    const offersMenu = document.getElementById('offers-menu')
+
+    offers.addEventListener('click', () => {
+        opened = !opened
+
+        clearTimeout(timeoutId)
+
+        offersMenu.classList.toggle('opened')
     })
 })
