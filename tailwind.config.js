@@ -58,6 +58,8 @@ module.exports = {
                 marquee: 'marquee 45s linear infinite',
                 'marquee-md': 'marquee-md 45s linear infinite',
                 'marquee-lg': 'marquee-lg 45s linear infinite',
+                slideup: 'slideup 150ms ease-in-out forwards',
+                slidedown: 'slidedown 150ms ease-in-out forwards',
             },
             keyframes: {
                 marquee: {
@@ -72,6 +74,16 @@ module.exports = {
                     'from': { transform: 'translateY(0)' },
                     'to': { transform: 'translateY(calc(-100% - 43px))' }
                 },
+                slidedown : {
+                    '0%': { 'max-height': 0, 'padding-top': 0, 'padding-bottom': 0 },
+                    '50%': { 'max-height': '75px', 'padding-top': '.75rem', 'padding-bottom': '.75rem' },
+                    '100%': { 'max-height': '200px', 'padding-top': '.75rem', 'padding-bottom': '.75rem' },
+                },
+                slideup: {
+                    '0%': { 'max-height': '200px', 'padding-top': '.75rem', 'padding-bottom': '.75rem' },
+                    '50%': { 'max-height': '75px', 'padding-top': '.75rem', 'padding-bottom': '.75rem' },
+                    '100%': { 'max-height': 0, 'padding-top': 0, 'padding-bottom': 0 },
+                }
             }
         }
     },
