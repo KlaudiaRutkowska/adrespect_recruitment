@@ -1,5 +1,5 @@
 import { defineConfig } from "vite"
-import compress from "vite-plugin-compress"
+import { compression } from 'vite-plugin-compression2'
 
 export default defineConfig({
     root: 'src',
@@ -8,6 +8,6 @@ export default defineConfig({
         emptyOutDir: true
     },
     plugins: [
-        compress()
+        compression()
     ]
 })
