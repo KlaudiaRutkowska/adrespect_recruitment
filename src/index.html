@@ -408,123 +408,126 @@
                     </h2>
                 </div>
 
-                <div
-                    class="expandable group/gallery overflow-hidden relative grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 lg:gap-[43px]">
+                <div class="expandable group/gallery relative masonry md:masonry-md lg:masonry-lg">
+                    <!-- column 1 -->
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg">
+                        <img src="/images/project-photo-1.png" alt="Project 1" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-4.png" alt="Project 4" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-7.png" alt="Project 7" loading="lazy" />
+                    </figure>
 
-                    <div class="flex flex-col gap-3 md:gap-6 lg:gap-[43px]">
-                        <div class="flex flex-col gap-3 md:gap-6 lg:gap-[43px]">
-                            <figure>
-                                <img src="/images/project-photo-1.png" alt="Project 1" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-4.png" alt="Project 4" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-7.png" alt="Project 7" />
-                            </figure>
+                    <!-- expanded -->
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-3.png" alt="Project 3" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-6.png" alt="Project 6" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-9.png" alt="Project 9" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-2.png" alt="Project 2" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-5.png" alt="Project 5" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-8.png" alt="Project 8" loading="lazy" />
+                    </figure>
 
-                            <!-- third columns images (on 2 column grid) -->
-                            <figure class="md:hidden">
-                                <img src="/images/project-photo-3.png" alt="Project 3" />
-                            </figure>
-                            <figure class="md:hidden">
-                                <img src="/images/project-photo-6.png" alt="Project 6" />
-                            </figure>
+                    <!-- column 2 -->
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-2.png" alt="Project 2" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-5.png" alt="Project 5" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-8.png" alt="Project 8" loading="lazy" />
+                    </figure>
 
-                            <!-- expanded -->
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-3.png" alt="Project 3" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-6.png" alt="Project 6" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-9.png" alt="Project 9" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-2.png" alt="Project 2" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-5.png" alt="Project 5" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-8.png" alt="Project 8" />
-                            </figure>
-                        </div>
-                    </div>
+                    <!-- expanded -->
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-1.png" alt="Project 1" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-3.png" alt="Project 3" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-4.png" alt="Project 4" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-6.png" alt="Project 6" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-7.png" alt="Project 7" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-9.png" alt="Project 9" loading="lazy" />
+                    </figure>
 
-                    <div class="flex flex-col gap-3 md:gap-6 lg:gap-[43px]">
-                        <div class="flex flex-col gap-3 md:gap-6 lg:gap-[43px]">
-                            <figure>
-                                <img src="/images/project-photo-2.png" alt="Project 2" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-5.png" alt="Project 5" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-8.png" alt="Project 8" />
-                            </figure>
+                    <!-- column 3 -->
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-3.png" alt="Project 3" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-6.png" alt="Project 6" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="break-inside translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px]">
+                        <img src="/images/project-photo-9.png" alt="Project 9" loading="lazy" />
+                    </figure>
 
-                            <!-- third columns images (on 2 column grid) -->
-                            <figure class="md:hidden">
-                                <img src="/images/project-photo-9.png" alt="Project 9" />
-                            </figure>
-
-                            <!-- expanded -->
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-1.png" alt="Project 1" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-3.png" alt="Project 3" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-4.png" alt="Project 4" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-6.png" alt="Project 6" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-7.png" alt="Project 7" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-9.png" alt="Project 9" />
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="flex-col gap-3 md:gap-6 lg:gap-[43px] hidden md:flex">
-                        <div class="flex flex-col gap-3 md:gap-6 lg:gap-[43px]">
-                            <figure>
-                                <img src="/images/project-photo-3.png" alt="Project 3" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-6.png" alt="Project 6" />
-                            </figure>
-                            <figure>
-                                <img src="/images/project-photo-9.png" alt="Project 9" />
-                            </figure>
-
-                            <!-- expanded -->
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-5.png" alt="Project 5" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-7.png" alt="Project 7" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-8.png" alt="Project 8" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-1.png" alt="Project 1" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-2.png" alt="Project 2" />
-                            </figure>
-                            <figure class="hidden expand">
-                                <img src="/images/project-photo-4.png" alt="Project 4" />
-                            </figure>
-                        </div>
-                    </div>
+                    <!-- expanded -->
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-5.png" alt="Project 5" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-7.png" alt="Project 7" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-8.png" alt="Project 8" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-1.png" alt="Project 1" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-2.png" alt="Project 2" loading="lazy" />
+                    </figure>
+                    <figure
+                        class="hidden translate-x-0 translate-y-0 transition group-[.is-expanded]/gallery:cursor-pointer group-[.is-expanded]/gallery:hover:-translate-y-1.5 group-[.is-expanded]/gallery:hover:shadow-lg mt-3 md:mt-6 lg:mt-[43px] break-inside expand">
+                        <img src="/images/project-photo-4.png" alt="Project 4" loading="lazy" />
+                    </figure>
 
                     <div
                         class="absolute left-0 right-0 bottom-0 after:block after:absolute after:bottom-0 after:bg-gradient-to-t after:from-beige after:to-[rgba(214,183,158,0)] after:h-[400px] sm:after:h-[600px] md:after:h-[750px] lg:after:h-[1000px] after:w-full group-[.is-expanded]/gallery:after:hidden">
@@ -632,7 +635,7 @@
         </div>
     </footer>
 
-    <script src="scripts/app.js" async></script>
+    <script type="module" src="scripts/app.js" async></script>
 </body>
 
 </html>

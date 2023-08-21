@@ -1,3 +1,5 @@
+import PhotoSwipeLightbox from 'photoswipe/lightbox'
+
 window.addEventListener("load", () => {
     let expanded = false
     const expandableGallery = document.querySelector('.expandable')
@@ -62,4 +64,40 @@ window.addEventListener("load", () => {
     closeButton.addEventListener('click', () => {
         searchBar.classList.remove('opened')
     })
+
+    // gallery lightbox
+    let lightbox = null
+    const figures = expandableGallery.querySelectorAll('figure')
+
+    // execute method generateLightbox on figure click
+    figures.forEach((figure, index) => {
+        figure.addEventListener('click', () => {
+            generateLightbox(index)
+        })
+    })
+
+    function generateLightbox(index = 0) {
+        if (!expandableGallery.classList.contains('is-expanded'))
+            return
+
+        const items = []
+        const images = document.querySelectorAll('.expandable figure:not(.hidden) img')
+
+        images.forEach(image => {
+            items.push({
+                src: image.getAttribute('src'),
+                width: image.clientWidth,
+                height: image.clientHeight
+            })
+        })
+
+        lightbox = new PhotoSwipeLightbox({
+            dataSource: items,
+            pswpModule: () => import('photoswipe')
+        });
+
+        lightbox.init()
+
+        lightbox.loadAndOpen(index)
+    }
 })
