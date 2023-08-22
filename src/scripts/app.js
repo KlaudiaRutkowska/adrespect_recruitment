@@ -1,4 +1,6 @@
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import Swiper from 'swiper'
+import { Navigation } from 'swiper/modules'
 
 window.addEventListener("load", () => {
     let expanded = false
@@ -100,4 +102,22 @@ window.addEventListener("load", () => {
 
         lightbox.loadAndOpen(index)
     }
+
+    //swiper
+    const swiper = new Swiper('.swiper', {
+        modules: [Navigation],
+        
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      console.log(swiper);
+      
 })
