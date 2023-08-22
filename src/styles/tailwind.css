@@ -1,0 +1,42 @@
+@import 'photoswipe/style.css';
+@import 'swiper/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', system-ui, sans-serif;
+    }
+}
+
+@layer utilities {
+    .grid-cols-bleed {
+        @apply grid-cols-[minmax(calc(calc(calc(100%_-_640px)_/_2)+calc(1rem_-_.5rem)),calc(1rem_-_.5rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_640px)_/_2)+calc(1rem_-_.5rem)),calc(1rem_-_.5rem))];
+        @apply md:grid-cols-[minmax(calc(calc(calc(100%_-_768px)_/_2)+calc(3rem_-_1rem)),calc(3rem_-_1rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_768px)_/_2)+calc(3rem_-_1rem)),calc(3rem_-_1rem))];
+        @apply lg:grid-cols-[minmax(calc(calc(calc(100%_-_1024px)_/_2)+calc(3rem_-_1.5rem)),calc(3rem_-_1.5rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_1024px)_/_2)+calc(3rem_-_1.5rem)),calc(3rem_-_1.5rem))];
+        @apply xl:grid-cols-[minmax(calc(calc(calc(100%_-_1280px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_1280px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))];
+        @apply 2xl:grid-cols-[minmax(calc(calc(calc(100%_-_1440px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))_repeat(12,_1fr)_minmax(calc(calc(calc(100%_-_1440px)_/_2)+calc(89px_-_4rem)),calc(89px_-_4rem))];
+    }
+
+    .animation-paused {
+        animation-play-state: paused;
+    }
+
+    .masonry {
+        column-gap: 0.75rem;
+        column-count: 2;
+      }
+      .masonry-md {
+        column-gap: 1.5rem;
+        column-count: 3;
+      }
+      .masonry-lg {
+        column-gap: 43px;
+        column-count: 3;
+      }
+      .break-inside {
+        break-inside: avoid;
+      }
+ }
