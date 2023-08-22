@@ -117,7 +117,4 @@ window.addEventListener("load", () => {
           prevEl: '.swiper-button-prev',
         },
       });
-
-      console.log(swiper);
-      
 })
