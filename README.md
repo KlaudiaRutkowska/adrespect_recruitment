@@ -2,7 +2,7 @@
 The project was created in the recruitment process for the agency [adRespect.pl](https://adrespect.pl/)
 
 ## Demo
-Here is a working live demo: https://github.com/KlaudiaRutkowska/adrespect_recruitment
+Here is a working live demo: https://klaudiarutkowska.github.io/adrespect_recruitment/
 
 ## Setup
 To run this project, install it using npm:
@@ -27,7 +27,7 @@ $ npm run build
 Projekt powstał w procesie rekrutacyjnym dla agencji [adRespect.pl](https://adrespect.pl/)
 
 ## Demo
-Działające demo znajduje się pod adresem: https://github.com/KlaudiaRutkowska/adrespect_recruitment
+Działające demo znajduje się pod adresem: https://klaudiarutkowska.github.io/adrespect_recruitment/
 
 ## Uruchomienie
 Aby uruchomić ten projekt, zainstaluj go za pomocą npm:
